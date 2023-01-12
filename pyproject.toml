@@ -1,0 +1,43 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+
+[project]
+name = "fastpdf"
+authors = [{name = "Felipe Maza", email = "felipe.maza@unican.es"}]
+mantainers = [{name = "Felipe Maza", email = "felipe.maza@unican.es"}]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = ["Topic :: Scientific/Engineering", "Programming Language :: Python"]
+dynamic = ["version", "description"]
+
+dependencies = [
+    "weasyprint",
+    "pytest >=7",
+    "coverage[toml]",
+]
+
+
+[project.optional-dependencies]
+dev = ["flit", "black", "sphinx", "myst-parser", "myst-nb", "sphinx-autoapi", "furo", "sphinx_rtd_theme"]
+
+
+[project.urls]
+#home = ""
+documentation = "https://ihcantabria.github.io/fastpdf"
+repository = "https://github.com/IHCantabria/fastpdf"
+changelog = "https://github.com/IHCantabria/fastpdf/blob/main/CHANGELOG.md"
+
+
+[project.scripts]
+pyteseo-tests = "pyteseo.cli:run_tests"
+
+[tool.pytest.ini_options]
+addopts = "-v --durations=0 --durations-min=0.05"
+testpaths = "fastpdf"
+
+[tool.coverage.run]
+command_line = "-m pytest"
+omit = ["*/tests/*"]
+source = ["fastpdf"]
