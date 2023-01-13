@@ -1,0 +1,30 @@
+.header-logos {
+  background-color: white;
+  height: 100%;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.logos-top {
+  height: 50px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 2.5cm;
+  width: 100%;
+  background-color: #1a1a1a;
+}
+#anexo {
+  padding: 20px;
+  font-size: medium;
+  font-family: serif;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
