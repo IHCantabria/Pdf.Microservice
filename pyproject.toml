@@ -13,14 +13,16 @@ classifiers = ["Topic :: Scientific/Engineering", "Programming Language :: Pytho
 dynamic = ["version", "description"]
 
 dependencies = [
-    "weasyprint",
-    "pytest >=7",
     "coverage[toml]",
+    "jinja2",
+    "pytest >=7",
+    "python-dotenv",
+    "weasyprint",
 ]
 
 
 [project.optional-dependencies]
-dev = ["flit", "black", "sphinx", "myst-parser", "myst-nb", "sphinx-autoapi", "furo", "sphinx_rtd_theme"]
+dev = ["black", "flit", "black", "sphinx", "myst-parser", "myst-nb", "sphinx-autoapi", "furo", "sphinx_rtd_theme"]
 
 
 [project.urls]
