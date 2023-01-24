@@ -21,7 +21,7 @@ class Generator(object):
     def create(self, data: dict) -> Path:
 
         index = f"{self.html_dir}/index.html"
-        output_path = Path("/tmp/Report.pdf")
+        output_path = Path(os.getenv("OUTPUT_PDF_PATH"))
 
         env = Environment(loader=FileSystemLoader(self.html_dir))
         template = env.get_template("index.html")
@@ -55,8 +55,10 @@ class Generator(object):
         date_end = date_start + +timedelta(hours=hours)
         return date_end
 
-    def _get_a_copy_template(self):
-        new_path = tempfile.NamedTemporaryFile().name
+    def _get_a_copy_template(self)->Path:
+        """ Returns a copy of the template folder
+        """
+        new_path = Path(tempfile.NamedTemporaryFile().name)
         logger.debug(f"Copying template to {new_path}")
-        shutil.copytree(os.getenv("TEMPLATE_PATH"), new_path)
+        shutil.copytree(Path(os.getenv("TEMPLATE_PATH"), new_path))
         return new_path
