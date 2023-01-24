@@ -16,10 +16,11 @@ dynamic = ["version", "description"]
 
 dependencies = [
     "coverage[toml]",
+    "fastapi",
     "jinja2",
-    "pango",
     "pytest >=7",
     "python-dotenv",
+    "uvicorn",
     "weasyprint",
 ]
 
@@ -28,12 +29,11 @@ dependencies = [
 dev = [
     "black",
     "flit",
-    "black",
-    "sphinx",
+    "furo",
     "myst-parser",
     "myst-nb",
+    "sphinx",
     "sphinx-autoapi",
-    "furo",
     "sphinx_rtd_theme",
 ]
 
@@ -44,6 +44,8 @@ documentation = "https://ihcantabria.github.io/fastpdf"
 repository = "https://github.com/IHCantabria/fastpdf"
 changelog = "https://github.com/IHCantabria/fastpdf/blob/main/CHANGELOG.md"
 
+[tool.black]
+addopts = "-v"
 
 [project.scripts]
 pyteseo-tests = "pyteseo.cli:run_tests"
