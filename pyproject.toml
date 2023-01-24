@@ -5,16 +5,19 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "fastpdf"
-authors = [{name = "Felipe Maza", email = "felipe.maza@unican.es"}]
-mantainers = [{name = "Felipe Maza", email = "felipe.maza@unican.es"}]
+authors = [{ name = "Felipe Maza", email = "felipe.maza@unican.es" }]
 readme = "README.md"
 requires-python = ">=3.7"
-classifiers = ["Topic :: Scientific/Engineering", "Programming Language :: Python"]
+classifiers = [
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python",
+]
 dynamic = ["version", "description"]
 
 dependencies = [
     "coverage[toml]",
     "jinja2",
+    "pango",
     "pytest >=7",
     "python-dotenv",
     "weasyprint",
@@ -22,7 +25,17 @@ dependencies = [
 
 
 [project.optional-dependencies]
-dev = ["black", "flit", "black", "sphinx", "myst-parser", "myst-nb", "sphinx-autoapi", "furo", "sphinx_rtd_theme"]
+dev = [
+    "black",
+    "flit",
+    "black",
+    "sphinx",
+    "myst-parser",
+    "myst-nb",
+    "sphinx-autoapi",
+    "furo",
+    "sphinx_rtd_theme",
+]
 
 
 [project.urls]

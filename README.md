@@ -4,6 +4,8 @@ PDF generator.
 
 ## Instalación
 
+Requiere tener instalado en el sistema el paquete `libpango1.0-0`.
+
 From github using `pip`:
 
 ```sh

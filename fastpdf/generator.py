@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
-from weasyprint import CSS, HTML
 
 from fastpdf import utils
 from fastpdf.PDFGenerator import PdfGenerator
@@ -19,10 +18,10 @@ class Generator(object):
         self.html_dir = self._get_a_copy_template()
         # self.annex = self._get_annex_text(self.job["refineryId"])
 
-    def create(self):
+    def create(self, data: dict) -> Path:
 
         index = f"{self.html_dir}/index.html"
-        output = f"/tmp/Report.pdf"
+        output_path = Path("/tmp/Report.pdf")
 
         env = Environment(loader=FileSystemLoader(self.html_dir))
         template = env.get_template("index.html")
@@ -39,11 +38,11 @@ class Generator(object):
             index_html, header_html=header_html, base_url=self.html_dir
         )
         data = pdfgenerator.render_pdf()
-        f = open(output, "wb")
+        f = open(output_path, "wb")
         f.write(data)
         f.close()
 
-        return output
+        return output_path
 
     def delete_temp(self):
         try:
