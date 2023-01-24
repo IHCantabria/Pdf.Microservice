@@ -1,4 +1,3 @@
-import json
 import shutil
 import uuid
 from pathlib import Path
@@ -6,7 +5,7 @@ from pathlib import Path
 from fastapi import APIRouter, Header
 from fastapi.responses import FileResponse
 
-from fastpdf.generator import Generator
+from src.generator import Generator
 
 router = APIRouter()
 

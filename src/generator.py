@@ -7,8 +7,8 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
-from fastpdf import utils
-from fastpdf.PDFGenerator import PdfGenerator
+from src import utils
+from src.PDFGenerator import PdfGenerator
 
 logger = utils.get_logger(__name__)
 

@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-from fastpdf.generator import Generator
+from src.generator import Generator
 
 
 
