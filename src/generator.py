@@ -27,10 +27,7 @@ class Generator(object):
         logger.debug("get template")
         template = env.get_template("index.html")
 
-        varlist = {
-            "title": "variable_titulo",
-            "annex": "texto anexo",
-        }
+        varlist = data
         logger.debug("render template")
         index_html = template.render(varlist)
         logger.debug("render header")
