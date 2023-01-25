@@ -52,9 +52,9 @@ pyteseo-tests = "pyteseo.cli:run_tests"
 
 [tool.pytest.ini_options]
 addopts = "-v --durations=0 --durations-min=0.05"
-testpaths = "fastpdf"
+testpaths = "src"
 
 [tool.coverage.run]
 command_line = "-m pytest"
 omit = ["*/tests/*"]
-source = ["fastpdf"]
+source = ["src"]
