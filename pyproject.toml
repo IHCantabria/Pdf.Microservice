@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 
 [project]
-name = "fastpdf"
+name = "src"
 authors = [{ name = "Felipe Maza", email = "felipe.maza@unican.es" }]
 readme = "README.md"
 requires-python = ">=3.7"

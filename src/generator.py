@@ -14,11 +14,26 @@ logger = utils.get_logger(__name__)
 
 
 class Generator(object):
+    """_summary_
+
+    Args:
+        object (_type_): _description_
+    """
+
     def __init__(self):
+        """_summary_"""
         self.html_dir = self._get_a_copy_template()
         # self.annex = self._get_annex_text(self.job["refineryId"])
 
     def create(self, data: dict) -> Path:
+        """Creates a pdf file from a dict
+
+        Args:
+            data (dict): fields to be used in the template
+
+        Returns:
+            Path: path to the pdf file
+        """
         logger.debug("create using data: %s", data)
         index = f"{self.html_dir}/index.html"
         output_path = Path(os.getenv("OUTPUT_PDF_PATH"))
@@ -47,6 +62,7 @@ class Generator(object):
         return output_path
 
     def delete_temp(self):
+        """Deletes the temp folder"""
         try:
             shutil.rmtree(self.html_dir)  # En ocasiones da excepcion.
         except Exception as e:
