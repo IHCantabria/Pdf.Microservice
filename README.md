@@ -9,7 +9,7 @@ Requiere tener instalado en el sistema el paquete `libpango1.0-0`.
 From github using `pip`:
 
 ```sh
-pip install git+https://github.com/IHCantabria/FastPDF
+pip install git+https://github.com/IHCantabria/Pdf.Microservice
 ```
 
 ## Credits
