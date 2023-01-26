@@ -1,8 +1,9 @@
 """PDF generator. 
 """
 
-__version__ = "0.0.2"
+__version__ = "0.1.0"
 
 
 from dotenv import load_dotenv
+
 load_dotenv()
