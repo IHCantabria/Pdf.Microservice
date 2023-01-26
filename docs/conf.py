@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "NetcdfData Microservice"
-copyright = "2023, Marco Antonio Vega Marichalar"
-author = "Marco Antonio Vega Marichalar"
+project = "PDF Microservice"
+copyright = "2023, Felipe Maza"
+author = "Felipe Maza"
 release = "0.1.0"
 
 # -- General configuration ---------------------------------------------------
@@ -36,6 +36,6 @@ html_title = project + " v" + release
 
 # -- Options for autoapi ext -------------------------------------------------
 
-autoapi_modules = {"app/api": None}
-autoapi_dirs = ["../app/"]
+autoapi_modules = {"src/api": None}
+autoapi_dirs = ["../src/"]
 autoapi_ignore = ["*/test_*.py"]
