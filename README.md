@@ -1,6 +1,6 @@
-# Fast PDF
+# PDF.Microservices
 
-PDF generator.
+Generador de PDFs a través de una API REST.
 
 ## Instalación
 
@@ -15,4 +15,3 @@ pip install git+https://github.com/IHCantabria/Pdf.Microservice
 ## Credits
 
 Developed and maintained by [Felipe Maza](https://ihcantabria.com/directorio-personal/felipe-maza-fernandez/) @ IHCantabria.
-
