@@ -5,11 +5,12 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+from src import __version__
 
 project = "PDF Microservice"
 copyright = "2023, Felipe Maza"
 author = "Felipe Maza"
-release = "0.1.0"
+release = __version__
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
