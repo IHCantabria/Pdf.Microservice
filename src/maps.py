@@ -8,7 +8,23 @@ import matplotlib.pyplot as plt
 from cartopy.io.img_tiles import OSM
 
 
+def _check_valid_center(center: tuple):
+    if not isinstance(center, tuple):
+        raise TypeError("Center must be a tuple")
+    if len(center) != 2:
+        raise ValueError("Center must be a tuple of length 2")
+    if not isinstance(center[0], float) and not isinstance(center[0], int):
+        raise TypeError("Longitude must be a float")
+    if not isinstance(center[1], float) and not isinstance(center[1], int):
+        raise TypeError("Latitude must be a float")
+    if center[0] < -180 or center[0] > 180:
+        raise ValueError("Longitude must be between -180 and 180")
+    if center[1] < -90 or center[1] > 90:
+        raise ValueError("Latitude must be between -90 and 90")
+
+
 def generate_map(center: tuple, output_path: Path) -> Path:
+    _check_valid_center(center)
     zoom_level = int(os.getenv("MAP_CONFIG_ZOOM", 10))
     figsize = (
         int(os.getenv("MAP_CONFIG_FIGSIZE", 5)),
@@ -57,6 +73,7 @@ def generate_map(center: tuple, output_path: Path) -> Path:
     output_filename = Path(output_path, "map.png")
     plt.savefig(output_filename, dpi=300, bbox_inches="tight", pad_inches=0)
     plt.close()
+    return output_filename
 
 
 def main():
