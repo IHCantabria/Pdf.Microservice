@@ -13,6 +13,7 @@ def test_create():
         {
             "title": "Hello World",
             "content": "This is a test",
+            "coords": (-0.4577, 47.1104),
         }
     )
     assert pdf.exists()

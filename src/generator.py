@@ -9,6 +9,7 @@ from jinja2 import Environment, FileSystemLoader
 
 from src import utils
 from src.PDFGenerator import PdfGenerator
+from src import maps
 
 logger = utils.get_logger(__name__)
 
@@ -34,6 +35,10 @@ class Generator(object):
         Returns:
             Path: path to the pdf file
         """
+
+        # generate map
+        map = maps.generate_map(data["coords"], Path(self.html_dir, "imgs"))
+
         logger.debug("create using data: %s", data)
         index = f"{self.html_dir}/index.html"
         output_path = Path(os.getenv("OUTPUT_PDF_PATH"))
