@@ -23,8 +23,14 @@ def _check_valid_center(center: tuple):
         raise ValueError("Latitude must be between -90 and 90")
 
 
+def _check_path_exists(path: Path):
+    if not path.exists():
+        raise FileNotFoundError(f"Path {path} does not exist")
+
+
 def generate_map(center: tuple, output_path: Path) -> Path:
     _check_valid_center(center)
+    _check_path_exists(output_path)
     zoom_level = int(os.getenv("MAP_CONFIG_ZOOM", 10))
     figsize = (
         int(os.getenv("MAP_CONFIG_FIGSIZE", 5)),

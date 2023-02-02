@@ -16,3 +16,11 @@ def test_check_valid_center():
 
     # Should not raise
     maps._check_valid_center((-5, -47))
+
+
+def test_check_path_exists():
+    with pytest.raises(FileNotFoundError):
+        maps._check_path_exists(Path("/tmp/does_not_exist"))
+
+    # Should not raise
+    maps._check_path_exists(Path("/tmp"))
