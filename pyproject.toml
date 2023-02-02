@@ -15,11 +15,13 @@ classifiers = [
 dynamic = ["version", "description"]
 
 dependencies = [
+    "cartopy",
     "coverage[toml]",
     "fastapi",
     "jinja2",
     "pytest >=7",
     "python-dotenv",
+    "scipy",
     "uvicorn",
     "weasyprint",
 ]
