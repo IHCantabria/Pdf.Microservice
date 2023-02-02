@@ -15,8 +15,12 @@ def generate_map(center: tuple, output_path: Path) -> Path:
         int(os.getenv("MAP_CONFIG_FIGSIZE", 5)),
     )
     extent_margin = float(os.getenv("MAP_CONFIG_EXTENT_RELATIVE", 0.3))
-    plt.subplots(figsize=figsize)
-    ax = plt.axes(projection=cartopy.crs.PlateCarree())
+
+    fig = plt.figure(figsize=figsize)
+
+    ax = fig.add_subplot(
+        1, 1, 1, projection=ccrs.PlateCarree()
+    )  # plt.axes(projection=cartopy.crs.PlateCarree())
 
     extent = [
         center[0] - extent_margin,
@@ -37,15 +41,15 @@ def generate_map(center: tuple, output_path: Path) -> Path:
     )
     ax.add_image(OSM(), zoom_level)
 
-    gl = ax.gridlines(
-        draw_labels=True,
-        linewidth=0.6,
-        color="gray",
-        alpha=0.1,
-        linestyle="-.",
-    )
-    gl.xlabel_style = {"size": 3, "color": "gray"}
-    gl.ylabel_style = {"size": 3, "color": "gray"}
+    # gl = ax.gridlines(
+    #     draw_labels=True,
+    #     linewidth=0.6,
+    #     color="gray",
+    #     alpha=0.1,
+    #     linestyle="-.",
+    # )
+    # gl.xlabel_style = {"size": 3, "color": "gray"}
+    # gl.ylabel_style = {"size": 3, "color": "gray"}
 
     # remove border
 
