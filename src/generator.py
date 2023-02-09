@@ -80,7 +80,8 @@ class Generator(object):
 
     def _get_a_copy_template(self) -> Path:
         """Returns a copy of the template folder"""
-        new_path = Path(tempfile.NamedTemporaryFile().name)
+        temp_preffix = os.getenv("TEMP_PREFFIX", "/tmp")
+        new_path = Path(tempfile.NamedTemporaryFile(prefix=temp_preffix).name)
         logger.debug(f"Copying template to {new_path}")
         shutil.copytree(Path(os.getenv("TEMPLATE_PATH")), new_path)
         return new_path
