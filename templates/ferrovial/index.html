@@ -1,0 +1,787 @@
+<html>
+
+<head>
+    <title>Informe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+</head>
+
+<body>
+    <div id="front-page">
+        <!-- <img src="imgs/informe-portada.jpg" alt=""> -->
+
+        <div class="big-title" style="padding-bottom: 5rem">
+            <h1>{{ project_name }}</h1>
+            <p>CLIMATE RISK ASSESSMENT</p>
+        </div>
+    </div>
+
+    <!-- <h2 class="title">Adaptare</h2>-->
+    <h2 id="project-info">1 Project Information</h2>
+    <div class="section">
+        <div class="field">
+            <label>Project Name:</label>
+            {{ project_name }}
+        </div>
+
+        <div class="field">
+            <label>Sector:</label>
+            {{ sector }}
+        </div>
+
+        <div class="field">
+            <label>Project Code:</label>
+            {{ project_code }}
+        </div>
+
+        <div class="field">
+            <label>Busines Area:</label>
+            {{ business_area }}
+        </div>
+
+        <div class="field">
+            <label>Company:</label>
+            {{ company }}
+
+        </div field>
+        <div class="field">
+            <label>Activity:</label>
+            {{ activity }}
+        </div>
+        <br>
+        <div class="field">
+            <label>Country:</label>
+            {{ country }}
+        </div>
+
+        <div class="field">
+            <label>Ferrovial Role:</label>
+            {{ ferrovial_role }}
+        </div>
+
+        <div class="field">
+            <label>Infraestructure Type:</label>
+            {{ infrastructure_type }}
+        </div>
+
+        <div class="field">
+            <label>Start Date (year-month-day):</label>
+            {{ start_date }}
+        </div>
+
+        <div class="field">
+            <label>End Date (year-month-day):</label>
+            {{ end_date }}
+        </div>
+        <br>
+
+        <div class="field">
+            <label>Longitude:</label>
+            {{coords}}
+        </div>
+
+        <div class="field">
+            <label>Latitude:</label>
+            {{coords}}
+        </div>
+    </div>
+
+    <h2 id="about">2 About this report</h2>
+    <div class="section">
+        <p>All the information in this report is provided for pre-diagnosis purposes on the physical climate risks that
+            may potentially affect the infrastructures promoted, designed, built and/or operated by Ferrovial during its
+            service life and related possible adaptation options.</p>
+        <p>The climate risk analysis encompasses different three time horizons -short [period 2010-2039, assuming
+            representative for the year 2025], medium [period 2020-2049, assuming representative for the year 2030] and
+            long-term [period 2036-2065, assuming representative for the year 2050]- as well as two different climate
+            scenarios, considering anthropogenic changes using greenhouse gas concentration trajectories (the so-called
+            Representative Concentration Pathways or RCPs). The scenarios considered are RCP4.5 (intermediate scenario)
+            and RCP8.5 (worst-case climate change scenarios).</p>
+        <p>The risk framework defined by the IPCC is followed, understanding the risk as the combination of three
+            different components: exposure, vulnerability and hazard.</p>
+
+        <figure>
+            <img src="imgs/fig-1.jpg" alt="figure 1" class="figure-img">
+            <figcaption>Figure 1. Risk components and interrelations (Source: IPCC, 2014 <sup>1</sup> ).</figcaption>
+        </figure>
+        <p class="note"><sup>1 </sup>IPCC, 2014: Climate Change 2014: Impacts, Adaptation, and Vulnerability. Summaries,
+            Frequently Asked Questions, and Cross-Chapter Boxes. A Contribution of Working Group II to the Fifth
+            Assessment Report of the Intergovernmental Panel on Climate Change [Field, C.B., V.R. Barros, D.J. Dokken,
+            K.J. Mach, M.D. Mastrandrea, T.E. Bilir, M. Chatterjee, K.L. Ebi, Y.O. Estrada, R.C. Genova, B. Girma, E.S.
+            Kissel, A.N. Levy, S. MacCracken, P.R. Mastrandrea, and L.L. White (eds.)]. World Meteorological
+            Organization, Geneva, Switzerland, 190 pp.</p>
+
+        <figure>
+            <table class="glosary-table">
+                <thead>
+                    <th>TERM</th>
+                    <th>Definition</th>
+                </thead>
+                <tr>
+                    <th class="row-header">RISK</th>
+                    <td>The term risk is often used to refer to the potential for adverse consequences of a
+                        climate-related hazard, or of adaptation or mitigation responses to such a hazard, on lives,
+                        livelihoods, health and wellbeing, ecosystems and species, economic, social and cultural assets,
+                        services (including ecosystem services), and infrastructure.</td>
+                </tr>
+                <tr>
+                    <th class="row-header">HAZARD</th>
+                    <td>The potential occurrence of a natural or human-induced physical event or trend that may cause
+                        loss of life, injury, or other health impacts, as well as damage and loss to property,
+                        infrastructure, livelihoods, service provision, ecosystems and environmental resources.</td>
+                </tr>
+                <tr>
+                    <th class="row-header">EXPOSURE</th>
+                    <td>The presence of people; livelihoods; species or ecosystems; environmental functions, services,
+                        and resources; infrastructure; or economic, social, or cultural assets in places and settings
+                        that could be adversely affected.</td>
+                </tr>
+                <tr>
+                    <th class="row-header">VULNERABILITY</th>
+                    <td>The propensity or predisposition to be adversely affected. Vulnerability encompasses a variety
+                        of concepts and elements including sensitivity or susceptibility to harm and lack of capacity to
+                        cope and adapt.</td>
+                </tr>
+                <tr>
+                    <th class="row-header">IMPACTS</th>
+                    <td>The consequences of realized risks on natural and human systems, where risks result from the
+                        interactions of climate-related hazards (including extreme weather and climate events),
+                        exposure, and vulnerability. Impacts generally refer to effects on lives, livelihoods, health
+                        and wellbeing, ecosystems and species, economic, social and cultural assets, services and
+                        infrastructure. Impacts may be referred to as consequences or outcomes and can be adverse or
+                        beneficial.</td>
+                </tr>
+                <tr>
+                    <th class="row-header">ADAPTATION</th>
+                    <td>In human systems, the process of adjustment to actual or expected climate and its effects, in
+                        order to moderate harm or exploit beneficial opportunities.
+                        The adaptative capacity is the ability of systems, institutions, humans and other organisms to
+                        adjust to potential damage, to take advantage of opportunities, or to respond to consequences.
+                    </td>
+                </tr>
+
+            </table>
+            <figcaption>Table 1. Risk components definitions (Source: IPCC, 2014).</figcaption>
+        </figure>
+
+
+        <p>This report supplies information to comply with the taxonomy substantial contribution requirements on the
+            adaptation criteria, and both the “do not significant harm” (DNSH) criteria for mitigation and adaptation.
+            It is important to highlight that, although both sets imply the development of a risk assessment, the
+            substantial contribution criteria for adaptation (as included in Annex II to de Climate Delegated Act)
+            reflect a higher level of ambition, and includes the need for the implementation of the identified
+            adaptation options, while as the substantial contribution criteria for mitigation (as included in Annex I to
+            de Climate Delegated Act) requirements the identification of potential adaptation options as a must.</p>
+        <p>Based on a catalog of possible adaptation measures, this report includes a set of possible adaptation options
+            with the respective suggested year of implementation. This proposal depends on the increase in the level of
+            risk experienced in the future horizons and scenarios, and on the level of admissible risk defined by the
+            user.</p>
+        <p>If the necessary information has been provided and is accurate, this report also presents a preliminary
+            estimate of the possible economic consequences on the analyzed infrastructure in terms of reactive CAPEX
+            (additional repair costs due to damages), OPEX increases and revenue losses during its service life. These
+            data should be understood only as an estimate and, if considered to be relevant, as a basis for a further
+            work development with a higher level of ambition.</p>
+        <p>Please make sure that you understand the limitations of the tools and their results, underlying simplified
+            assumptions, and underlying uncertainties, whose sources include but are not limited to climate scenarios,
+            models, spatial resolution, choice of climate variables and their expression, simplification of impact
+            models, and parametric and limited description of projects.</p>
+
+
+        <div class="icon-msg">
+            <span class="material-symbols-outlined">info</span>
+            <p>For more information on the methodology, use and operation of the tool, as well as its results and
+                limitations, please consult the user's manual.</p>
+        </div>
+
+    </div>
+
+    <h2 id="use">3 How to read and use this report</h2>
+    <div class="section">
+        <p>This report includes the following information:</p>
+
+        <ul>
+            <li>An adaptation planning (Section 5) with a summary of the risks (considering both hazard and sensitivity)
+                the infrastructure may face and its evolution over time, and a set of possible adaptation measures
+                selected to reduce these risks and its implementation over time.</li>
+            <li>A risk assessment (Section 6) with the breakdown of all the impacts that could produce damages over the
+                infrastructure and its evolution over time, expressed as a potential risk indicator. It is classified by
+                asset, risk driver, a set of possible adaptation measures selected to reduce these risks and its
+                implementation over time.</li>
+            <li>A hazard analysis (Section 7) with a detailed study of the hazards that could harm the infrastructure
+                and its climate evolution over time expressed as a hazard index, including all the considered climate
+                variables and its climate evolution over time.</li>
+            <li>A financial analysis (Section 8) with a preliminary estimate of the possible consequences on the
+                analyzed infrastructure in terms of CAPEX damages, OPEX increases and revenue losses.</li>
+        </ul>
+
+        <p>The results provided by the tool and included in this report are grouped into three categories: those
+            involving an increase in climate risk on CAPEX (damage to assets), on OPEX (increased operating and
+            maintenance costs), and on revenues (reduction in expected revenues) of the infrastructure during its
+            service life.</p>
+        <p>This report should be the starting point for the development of an adaptation plan for the assessed
+            infrastructure. An adaptation plan should include not only a climate risk analysis and an identification of
+            possible adaptation options, but also an implementation, monitoring and evaluation plan (ISO 14090).</p>
+
+        <div class="icon-msg">
+            <span class="material-symbols-outlined">warning</span>
+            <p>The results included in this report refer to the climate risks that may affect the infrastructure during
+                its service life. The materiality of risk will vary depending on the role (constructor - no climate
+                risks, concessionaire - foreseeable risks) of the final recipient.</p>
+        </div>
+    </div>
+
+    <h2 id="index">4 Index</h2>
+    <div class="section ordered-list">
+        <ol>
+            <li>PROJECT INFORMATION</li>
+            <li>ABOUT THIS REPORT</li>
+            <li>HOW TO READ AND USE THIS REPORT</li>
+            <li>INDEX</li>
+            <li>ADAPTATION ANALYSIS</li>
+            <li>RISK ANALYSIS</li>
+            <ol>
+                <li>TOTAL RISKS (Infrastructure)</li>
+                <li>ASSET RISKS SUMMARY</li>
+                <li>DETAILED ASSET RISKS AND POTENTIAL ADAPTATION MEASURES</li>
+            </ol>
+
+            <li>HAZARD ANALYSIS</li>
+            <ol>
+                <li>SUMMARY</li>
+                <li>HAZARD ANALYSIS</li>
+                <li>CLIMATE DATA</li>
+            </ol>
+
+            <li>ECONOMIC CONSEQUENCES</li>
+            <li>CHANGES AND COMMENTS TO THE REFERENCE VALUES</li>
+        </ol>
+    </div>
+
+    <h2 id="planning">5 Adaptation Planning</h2>
+    <div class="section">
+        <p>This section presents a summary of the increased risk experienced by the infrastructure during its service
+            life. The Potential Risk Index (PRI) is used as an indicator and is presented for different time horizons
+            and climate scenarios (RCPs). This incremental risk analysis is provided separately for CAPEX, OPEX and
+            infrastructure revenues. The ranges of the PRI corresponding to each risk level are shown in the table
+            below.</p>
+        <p>In addition, a set of possible adaptation options that could be implemented to reduce the increase in risk is
+            presented. For each of them, an implementation time horizon is indicated, depending on the increase in risk
+            experienced by the infrastructure.</p>
+
+        <h3>INFRASTRUCTURE RISKS</h3>
+
+        <!-- REF. example DYNAMIC TABLE -->
+        <table class="dynamic-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th COLSPAN="2">Near-term <br />2025</th>
+                    <th COLSPAN="2">Short-term <br />2030</th>
+                    <th COLSPAN="2">Mid-term <br />2050</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>CAPEX</th>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                </tr>
+                <tr>
+                    <th>OAPEX</th>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                    <td class="minor">MINOR</td>
+                </tr>
+                <tr>
+                    <th>REVENUES</th>
+                    <td class="grave">GRAVE</td>
+                    <td class="grave">GRAVE</td>
+                    <td class="grave">GRAVE</td>
+                    <td class="grave">GRAVE</td>
+                    <td class="grave">GRAVE</td>
+                    <td class="grave">GRAVE</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <!-- LEGEND -->
+        <table class="legend">
+            <thead>
+                <tr>
+                    <th><strong>Level of potential risk increase</strong></th>
+                    <th>Potential Risk Increase Indicator ranges</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="no-variation">NO VARIATION</td>
+                    <td>(*) 0 ≤ PRI ≤ 5 %</td>
+                </tr>
+                <tr>
+                    <td class="minor">MINOR</td>
+                    <td>5 < PRI ≤ 25 %</td>
+                </tr>
+                <tr>
+                    <td class="moderate">MODERATE</td>
+                    <td>25 < PRI ≤ 40 %</td>
+                </tr>
+                <tr>
+                    <td class="serious">SERIOUS</td>
+                    <td>40 < PRI ≤ 60 %</td>
+                </tr>
+                <tr>
+                    <td class="grave">GRAVE</td>
+                    <td>> 60 %</td>
+                </tr>
+                <tr>
+                    <td COLSPAN="2">(*)Risk reduction situations are not accounted</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>POSSIBLE ADAPTATION OPTIONS SELECTED</h3>
+        <!-- REF. example DYNAMIC LIST -->
+        <h4>Buildings</h4>
+        <ul>
+            <li>Improve access to facilities (implementation year 2030)</li>
+            <li>Improve building insulation (implementation year 2030)</li>
+            <li>Insulate buildings and warehouses (implementation year 2030)</li>
+            <li>Roof protection (implementation year 2050)</li>
+        </ul>
+
+
+    </div>
+
+    <h2 id="risk-analysis">6 Risk Assessment</h2>
+    <div class="section">
+        <p>This section presents a summary of the increased risk experienced by the infrastructure during its service
+            life, as well as a summary and detailed analysis of the increased risk that each of the assets comprising
+            the infrastructure will experience.</p>
+        <p>The Potential Risk Index (PRI) is used as an indicator and is presented for different time horizons and
+            climate scenarios (RCPs). This incremental risk analysis is provided separately for CAPEX, OPEX and
+            infrastructure revenues. The ranges of the PRI corresponding to each risk level are shown in the table
+            below.</p>
+        <p>In addition, a set of possible adaptation options that could be implemented to reduce the increase in risk is
+            presented. For each of them, a possible implementation time horizon is suggested, depending on the evolution
+            of risk increase experienced by the infrastructure.</p>
+
+        <!-- LEGEND -->
+        <table class="legend">
+            <thead>
+                <tr>
+                    <th><strong>Level of potential risk increase</strong></th>
+                    <th>Potential Risk Increase Indicator ranges</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="no-variation">NO VARIATION</td>
+                    <td>(*) 0 ≤ PRI ≤ 5 %</td>
+                </tr>
+                <tr>
+                    <td class="minor">MINOR</td>
+                    <td>5 < PRI ≤ 25 %</td>
+                </tr>
+                <tr>
+                    <td class="moderate">MODERATE</td>
+                    <td>25 < PRI ≤ 40 %</td>
+                </tr>
+                <tr>
+                    <td class="serious">SERIOUS</td>
+                    <td>40 < PRI ≤ 60 %</td>
+                </tr>
+                <tr>
+                    <td class="grave">GRAVE</td>
+                    <td>> 60 %</td>
+                </tr>
+                <tr>
+                    <td COLSPAN="2">(*)Risk reduction situations are not accounted</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="risk-analysis-infraestructure">6.1 INFRASTRUCTURE RISKS</h3>
+        <!-- DYNAMIC TABLE -->
+
+        <h3 id="risk-analysis-summary">6.2 ASSET RISKS SUMMARY</h3>
+        <div>
+            
+            <!-- REF. TITLE DYNAMIC TABLE -->
+            <h4>Buildings</h4>
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+        </div>
+
+        <h3 id="risk-analysis-detailed">6.3 DETAILED BREAKDOWN OF ASSET RISKS AND POSSIBLE ADAPTATION OPTIONS</h3>
+        <p>This subsection provides a breakdown of the risk driving the increase in risk per asset in order to support
+            the selection of the most appropriate adaptation options.</p>
+
+        <div>
+
+            <!-- DYNAMIC TABLE -->
+            <!-- DYNAMIC LIST -->
+
+            <!-- DYNAMIC TABLE -->
+            <!-- DYNAMIC LIST -->
+
+            <!-- DYNAMIC TABLE -->
+            <!-- DYNAMIC LIST -->
+
+            <!-- DYNAMIC TABLE -->
+            <!-- DYNAMIC LIST -->
+
+            <!-- DYNAMIC TABLE -->
+            <!-- DYNAMIC LIST -->
+
+            <!-- DYNAMIC TABLE -->
+            <!-- DYNAMIC LIST -->
+
+            <!-- DYNAMIC TABLE -->
+            <!-- DYNAMIC LIST -->
+
+            <!-- DYNAMIC TABLE -->
+            <!-- DYNAMIC LIST -->
+        </div>
+
+
+    </div>
+
+    <h2 id="hazard-analysis">7 hazard Analysis</h2>
+    <div class="section">
+        <p>This section presents an assessment of the changes in the climate hazards that could adversely affect the
+            infrastructure and its assets during its service life.</p>
+        <p>A Hazard Index (HI) is used as an indicator and is presented for different time horizons and climate
+            scenarios (RCPs). The ranges of the HI corresponding to each variation level are shown in the table below.
+        </p>
+        <p>Firstly (Section 7.1), a summary presents the main changes in four groups, according to the proposed by the
+            Taxonomy. For each group, two indicators are shown: one for chronic hazards (long term, slow varying
+            hazards) and one for acute (short term, extreme hazards).</p>
+        <p>Secondly (Section 7.2), an in-depth analysis shows the detailed information regarding the changes in the
+            climate hazards for each hazard variable involved in the risk assessment of the infrastructure analyzed.
+            Furthermore, the specific assets affected by each climatic hazard are also listed below the tables.</p>
+        <p>Lastly (Section 7.3), all the climate data for each climate variable considered in the risk assessment
+            carried out by the tool is included.</p>
+
+        <!-- LEGEND -->
+        <table class="legend" style="width:100%">
+            <thead>
+                <tr>
+                    <th colspan="11">HAZARD CHANGE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="6" style="text-align: left"><strong>Hazard reduction</strong></th>
+                    <th colspan="6" style="text-align: right"><strong>Hazard Increase</strong></th>
+                </tr>
+                <tr>
+                    <td><span class="dot reduction-extreme"></span></td>
+                    <td><span class="dot reduction-very-high"></span></td>
+                    <td><span class="dot reduction-high"></span></td>
+                    <td><span class="dot reduction-medium"></span></td>
+                    <td><span class="dot reduction-low"></span></td>
+                    <td><span class="dot no-variation"></span></td>
+                    <td><span class="dot increase-low"></span></td>
+                    <td><span class="dot increase-medium"></span></td>
+                    <td><span class="dot increase-high"></span></td>
+                    <td><span class="dot increase-very-high"></span></td>
+                    <td><span class="dot increase-extreme"></span></td>
+                </tr>
+                <tr>
+                    <td>Extreme</td>
+                    <td>Very High</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                    <td>Low</td>
+                    <td>No variation</td>
+                    <td>Low</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td>Very High</td>
+                    <td>Extreme</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 id="hazard-summary">7.1 SUMMARY</h3>
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+        <h3 id="hazard-analysis-analysis">7.2 HAZARD ANALYSIS</h>
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <h3>Hazard – climate variables relationship</h3>
+            <!-- LEGEND -->
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>TEMPERATURE RELATED</strong></th>
+                        <th><strong>CLIMATE VARIABLE</strong></th>
+                        <th><strong>Units</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="table-subheader"><strong>Chronic</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Heat stress</td>
+                        <td>The average number of days per year with daily maximum temperature >= 40°C</td>
+                        <td>days/year</td>
+                    </tr>
+                    <tr>
+                        <td>Changing temperature (air, freshwater, marine water)</td>
+                        <td>Mean annual temperature</td>
+                        <td>°C</td>
+                    </tr>
+                    <tr>
+                        <td>Temperature variability</td>
+                        <td>Mean annual temperature</td>
+                        <td>°C</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-subheader"><strong>Acute</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Cold wave/frost</td>
+                        <td>The average number of days per year with daily minimum temperature < -31°C</td>
+                        <td>days/year</td>
+                    </tr>
+                    <tr>
+                        <td>Heat wave</td>
+                        <td>The average number of days per year with daily maximum temperature >= 40°C</td>
+                        <td>days/year</td>
+                    </tr>
+                    <tr>
+                        <td>Wildfire</td>
+                        <td>WRI water stress. water stress measures total annual water withdrawals (municipal,
+                            industrial, and agricultural) expressed as a percent of the total annual available flow</td>
+                        <td>%</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="3"><strong>WATER RELATED</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="table-subheader"><strong>Chronic</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Sea level rise</td>
+                        <td>Relative sea level rise</td>
+                        <td>m</td>
+                    </tr>
+                    <tr>
+                        <td>Changing precipitation patterns and types (rain, hail, snow/ice)</td>
+                        <td>Mean annual rainfall (including frozen precipitation)</td>
+                        <td>mm</td>
+                    </tr>
+                    <tr>
+                        <td>Precipitation or hydrological variability</td>
+                        <td>Mean annual rainfall (including frozen precipitation)</td>
+                        <td>mm</td>
+                    </tr>
+                    <tr>
+                        <td>Water stress</td>
+                        <td>WRI water stress. water stress measures total annual water withdrawals (municipal,
+                            industrial, and agricultural) expressed as a percent of the total annual available flow</td>
+                        <td>%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-subheader"><strong>Acute</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Heavy precipitation (rain, hail, snow/ice)</td>
+                        <td>25-year return period of maximum 1-day precipitation</td>
+                        <td>mm</td>
+                    </tr>
+                    <tr>
+                        <td>Heavy precipitation (rain, hail, snow/ice)</td>
+                        <td>Winter months accumulated snow</td>
+                        <td>mm</td>
+                    </tr>
+                    <tr>
+                        <td>Flood (coastal flooding)</td>
+                        <td>The # of hours per year with coastal flooding in a berth with a freeboard of 0.60 mS</td>
+                        <td>hours/year</td>
+                    </tr>
+                    <tr>
+                        <td>Flood (overtopping)</td>
+                        <td>The # of hours per year with overtopping > 0.1/s/m of a rubble mound breakwater for a
+                            freeboard of 10 m.</td>
+                        <td>hours/year</td>
+                    </tr>
+                    <tr>
+                        <td>Drought</td>
+                        <td>The annual probability of experiencing SEVERE short-term term drought, determined by the
+                            Standardized Precipitation Evaporation Index</td>
+                        <td>%</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="3"><strong>WIND RELATED</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="table-subheader"><strong>Chronic</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Changing wind patterns</td>
+                        <td>Annual mean windspeed at 10 m</td>
+                        <td>mps</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-subheader"><strong>Acute</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Storm (including blizzards, dust and sandstorms)</td>
+                        <td>Number of high wind days (15 m/s)</td>
+                        <td>days/year</td>
+                    </tr>
+                    <tr>
+                        <td>Cyclone, hurricane, typhoon</td>
+                        <td>The annual exceedance probability of experiencing Saffir-Simpson Hurricane Scale Category 1
+                            winds (60-sec gust 10-m wind speed of at least 64 kt, which translates to a 3-sec gust
+                            windspeed of approximately 79 kt for an on-shore wind off the sea)</td>
+                        <td>%</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th colspan="3"><strong>SOLID MASS RELATED</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="table-subheader"><strong>Chronic</strong></td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="table-subheader"><strong>Acute</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Landslide</td>
+                        <td>Number of days per year with heavy precipitation</td>
+                        <td>days/year</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 id="hazard-analysis-data">7.3 CLIMATE DATA</h3>
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+            <!-- DYNAMIC TABLE -->
+
+    </div>
+
+
+    <h2 id="consequences">8 Financial Consequences</h2>
+    <div class="section">
+        <p>This section summarizes the financial consequences derived from the climate hazards affecting the CAPEX, OPEX
+            and revenues, for the different time periods and RCP scenarios.</p>
+        <p>First, the total economic consequences for the infrastructure studied is shown, and in the tables below,
+            these total economic consequences are shown by physical assets.</p>
+
+        <div class="icon-msg">
+            <span class="material-symbols-outlined">warning</span>
+            <p>Decimal point is used in all figures.</p>
+        </div>
+
+        <h3>INFRASTRUCTURE CONSEQUENCES ESTIMATION</h3>
+        <!-- DYNAMIC TABLE -->
+
+        <h3>ASSETS CONSEQUENCES ESTIMATION</h3>
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+        <!-- DYNAMIC TABLE -->
+
+    </div>
+
+    <h2 id="comments">9 Changes and comments to the reference value</h2>
+    <div class="section">
+
+    </div>
+
+</body>
+
+</html>
