@@ -2,7 +2,7 @@
 
 <head>
     <title>Informe</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ferrovial/styles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
 </head>
@@ -12,7 +12,7 @@
         <!-- <img src="imgs/informe-portada.jpg" alt=""> -->
 
         <div class="big-title" style="padding-bottom: 5rem">
-            <h1>{{ project_name }}</h1>
+            <h1>{{ s1["project_name"] }}</h1>
             <p>CLIMATE RISK ASSESSMENT</p>
         </div>
     </div>
@@ -78,12 +78,12 @@
 
         <div class="field">
             <label>Longitude:</label>
-            {{coords}}
+            {{ longitude }}
         </div>
 
         <div class="field">
             <label>Latitude:</label>
-            {{coords}}
+            {{ latitude }}
         </div>
     </div>
 
@@ -102,7 +102,7 @@
             different components: exposure, vulnerability and hazard.</p>
 
         <figure>
-            <img src="imgs/fig-1.jpg" alt="figure 1" class="figure-img">
+            <img src="ferrovial/imgs/fig-1.jpg" alt="figure 1" class="figure-img">
             <figcaption>Figure 1. Risk components and interrelations (Source: IPCC, 2014 <sup>1</sup> ).</figcaption>
         </figure>
         <p class="note"><sup>1 </sup>IPCC, 2014: Climate Change 2014: Impacts, Adaptation, and Vulnerability. Summaries,
@@ -423,7 +423,7 @@
 
         <h3 id="risk-analysis-summary">6.2 ASSET RISKS SUMMARY</h3>
         <div>
-            
+
             <!-- REF. TITLE DYNAMIC TABLE -->
             <h4>Buildings</h4>
             <!-- DYNAMIC TABLE -->

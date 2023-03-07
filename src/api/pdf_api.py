@@ -10,7 +10,6 @@ from src.generator import Generator
 router = APIRouter()
 
 
-@router.get("/")
 def create_pdf_demo(title: str = "Título", content: str = "Contenido"):
     """Returns a PDF file with the given title and content.
 
@@ -38,3 +37,14 @@ def create_pdf_demo(title: str = "Título", content: str = "Contenido"):
         media_type="application/x-pdf",
         filename=pdf_final_name,
     )
+
+
+@router.post("/create")
+def create_pdf(data: dict):
+    """Returns a PDF file"""
+    generator = Generator(data["template_name"])
+    pdf = generator.create(data)
+    pdf_final_name = f"{str(uuid.uuid4())}.pdf"
+    pdf_final_path = Path(pdf.parent, pdf_final_name)
+    shutil.move(pdf, pdf_final_path)
+    return pdf_final_path

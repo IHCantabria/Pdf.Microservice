@@ -1,0 +1,21 @@
+{
+    "template_name": "ferrovial",
+    "CRT_version": "1.2.1",
+    "content": {
+        "s1": {
+            "project_name": "Azores_1",
+            "sector": "Rodas",
+            "project_code": "HW_A1",
+            "business_area": "Infrasctructures",
+            "company": "Cintra",
+            "activity": "6.15. Road construction / maintenance and operation",
+            "country": "Portugal",
+            "ferrovial_role": "Operator",
+            "infrastructure_type": "Greenfield",
+            "start_date": "2020-01-01",
+            "end_date": "2050-12-31",
+            "longitude": -25.5761,
+            "latitude": 37.776
+        }
+    }
+}
