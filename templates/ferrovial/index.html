@@ -456,24 +456,42 @@
 
         <h3 id="risk-analysis-summary">6.2 ASSET RISKS SUMMARY</h3>
         <div>
+            {% for table in s6["s62"] %}
+            <h4>{{ table["title"] }}</h4>
+            <table class="dynamic-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th COLSPAN="2">Near-term <br />2025</th>
+                        <th COLSPAN="2">Short-term <br />2030</th>
+                        <th COLSPAN="2">Mid-term <br />2050</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in table["rows"] %}
+                    <tr>
+                        <td>{{ row["title"] }}</td>
+                        <td class="{{ row['nt4'] | lower }}">{{ row["nt4"] }}</td>
+                        <td class="{{ row['nt8'] | lower }}">{{ row["nt8"] }}</td>
+                        <td class="{{ row['st4'] | lower }}">{{ row["st4"] }}</td>
+                        <td class="{{ row['st8'] | lower }}">{{ row["st8"] }}</td>
+                        <td class="{{ row['mt4'] | lower }}">{{ row["mt4"] }}</td>
+                        <td class="{{ row['mt8'] | lower }}">{{ row["mt8"] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
 
-            <!-- REF. TITLE DYNAMIC TABLE -->
-            <h4>Buildings</h4>
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
+            </table>
+            {% endfor %}
         </div>
 
         <h3 id="risk-analysis-detailed">6.3 DETAILED BREAKDOWN OF ASSET RISKS AND POSSIBLE ADAPTATION OPTIONS</h3>
