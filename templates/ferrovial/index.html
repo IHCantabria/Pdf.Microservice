@@ -22,68 +22,68 @@
     <div class="section">
         <div class="field">
             <label>Project Name:</label>
-            {{ project_name }}
+            {{ s1["project_name"] }}
         </div>
 
         <div class="field">
             <label>Sector:</label>
-            {{ sector }}
+            {{ s1["sector"] }}
         </div>
 
         <div class="field">
             <label>Project Code:</label>
-            {{ project_code }}
+            {{ s1["project_code"] }}
         </div>
 
         <div class="field">
             <label>Busines Area:</label>
-            {{ business_area }}
+            {{ s1["business_area"] }}
         </div>
 
         <div class="field">
             <label>Company:</label>
-            {{ company }}
+            {{ s1["company"] }}
 
         </div field>
         <div class="field">
             <label>Activity:</label>
-            {{ activity }}
+            {{ s1["activity"] }}
         </div>
         <br>
         <div class="field">
             <label>Country:</label>
-            {{ country }}
+            {{ s1["country"] }}
         </div>
 
         <div class="field">
             <label>Ferrovial Role:</label>
-            {{ ferrovial_role }}
+            {{ s1["ferrovial_role"] }}
         </div>
 
         <div class="field">
             <label>Infraestructure Type:</label>
-            {{ infrastructure_type }}
+            {{ s1["infrastructure_type"] }}
         </div>
 
         <div class="field">
             <label>Start Date (year-month-day):</label>
-            {{ start_date }}
+            {{ s1["start_date"] }}
         </div>
 
         <div class="field">
             <label>End Date (year-month-day):</label>
-            {{ end_date }}
+            {{ s1["end_date"] }}
         </div>
         <br>
 
         <div class="field">
             <label>Longitude:</label>
-            {{ longitude }}
+            {{ s1["longitude"] }}
         </div>
 
         <div class="field">
             <label>Latitude:</label>
-            {{ latitude }}
+            {{ s1["latitude"] }}
         </div>
     </div>
 
@@ -301,7 +301,7 @@
                     <td class="minor">MINOR</td>
                 </tr>
                 <tr>
-                    <th>OAPEX</th>
+                    <th>OPEX</th>
                     <td class="minor">MINOR</td>
                     <td class="minor">MINOR</td>
                     <td class="minor">MINOR</td>
@@ -419,7 +419,40 @@
         </table>
 
         <h3 id="risk-analysis-infraestructure">6.1 INFRASTRUCTURE RISKS</h3>
-        <!-- DYNAMIC TABLE -->
+
+        <table class="dynamic-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th COLSPAN="2">Near-term <br />2025</th>
+                    <th COLSPAN="2">Short-term <br />2030</th>
+                    <th COLSPAN="2">Mid-term <br />2050</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in s6["s61"] %}
+                <tr>
+                    <td>{{ row["title"] }}</td>
+                    <td>{{ row["nt4"] }}</td>
+                    <td>{{ row["nt8"] }}</td>
+                    <td>{{ row["st4"] }}</td>
+                    <td>{{ row["st8"] }}</td>
+                    <td>{{ row["mt4"] }}</td>
+                    <td>{{ row["mt8"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
 
         <h3 id="risk-analysis-summary">6.2 ASSET RISKS SUMMARY</h3>
         <div>

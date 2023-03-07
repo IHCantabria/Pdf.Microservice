@@ -16,6 +16,37 @@
             "end_date": "2050-12-31",
             "longitude": -25.5761,
             "latitude": 37.776
+        },
+        "s6": {
+            "s61": [
+                {
+                    "title": "CAPEX",
+                    "nt4": "MINOR",
+                    "nt8": "MINOR",
+                    "st4": "MINOR",
+                    "st8": "MINOR",
+                    "mt4": "MINOR",
+                    "mt8": "MINOR"
+                },
+                {
+                    "title": "OPEX",
+                    "nt4": "MINOR",
+                    "nt8": "MINOR",
+                    "st4": "MINOR",
+                    "st8": "MINOR",
+                    "mt4": "MINOR",
+                    "mt8": "MINOR"
+                },
+                {
+                    "title": "REVENUES",
+                    "nt4": "GRAVE",
+                    "nt8": "GRAVE",
+                    "st4": "GRAVE",
+                    "st8": "GRAVE",
+                    "mt4": "GRAVE",
+                    "mt8": "GRAVE"
+                }
+            ]
         }
     }
 }
