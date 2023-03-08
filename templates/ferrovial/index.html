@@ -613,14 +613,42 @@
         </table>
 
         <h3 id="hazard-summary">7.1 SUMMARY</h3>
+        {% for row in s7["s71"] %}
+        <h4> {{ row["title"] }}</h4>
+        <table class="dynamic-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th COLSPAN="2">Near-term <br />2025</th>
+                    <th COLSPAN="2">Short-term <br />2030</th>
+                    <th COLSPAN="2">Mid-term <br />2050</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in row["rows"] %}
+                <tr>
+                    <td>{{ r["title"] }}</td>
+                    <td><span class="dot {{ r['nt4'] | lower | replace(' ', '-')  }}"></span></td>
+                    <td><span class="dot {{ r['nt8'] | lower | replace(' ', '-')  }}"></span></td>
+                    <td><span class="dot {{ r['st4'] | lower | replace(' ', '-')  }}"></span></td>
+                    <td><span class="dot {{ r['st8'] | lower | replace(' ', '-')  }}"></span></td>
+                    <td><span class="dot {{ r['mt4'] | lower | replace(' ', '-')  }}"></span></td>
+                    <td><span class="dot {{ r['mt8'] | lower | replace(' ', '-')  }}"></span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
 
-        <!-- DYNAMIC TABLE -->
-
-        <!-- DYNAMIC TABLE -->
-
-        <!-- DYNAMIC TABLE -->
-
-        <!-- DYNAMIC TABLE -->
+        </table>
+        {% endfor %}
 
         <h3 id="hazard-analysis-analysis">7.2 HAZARD ANALYSIS</h>
 

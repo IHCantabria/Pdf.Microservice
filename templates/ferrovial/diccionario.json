@@ -707,6 +707,102 @@
                     ]
                 }
             ]
+        },
+        "s7": {
+            "s71": [
+                {
+                    "title": "Temperature-related",
+                    "rows": [
+                        {
+                            "title": "Chronic",
+                            "nt4": "NO VARIATION",
+                            "nt8": "NO VARIATION",
+                            "st4": "NO VARIATION",
+                            "st8": "NO VARIATION",
+                            "mt4": "INCREASE LOW",
+                            "mt8": "INCREASE LOW"
+                        },
+                        {
+                            "title": "Acute",
+                            "nt4": "INCREASE EXTREME",
+                            "nt8": "INCREASE EXTREME",
+                            "st4": "INCREASE EXTREME",
+                            "st8": "INCREASE EXTREME",
+                            "mt4": "INCREASE EXTREME",
+                            "mt8": "INCREASE EXTREME"
+                        }
+                    ]
+                },
+                {
+                    "title": "Water-related",
+                    "rows": [
+                        {
+                            "title": "Chronic",
+                            "nt4": "NO VARIATION",
+                            "nt8": "NO VARIATION",
+                            "st4": "NO VARIATION",
+                            "st8": "NO VARIATION",
+                            "mt4": "NO VARIATION",
+                            "mt8": "NO VARIATION"
+                        },
+                        {
+                            "title": "Acute",
+                            "nt4": "NO VARIATION",
+                            "nt8": "NO VARIATION",
+                            "st4": "NO VARIATION",
+                            "st8": "NO VARIATION",
+                            "mt4": "NO VARIATION",
+                            "mt8": "NO VARIATION"
+                        }
+                    ]
+                },
+                {
+                    "title": "Wind-related",
+                    "rows": [
+                        {
+                            "title": "Chronic",
+                            "nt4": "INCREASE EXTREME",
+                            "nt8": "INCREASE EXTREME",
+                            "st4": "INCREASE EXTREME",
+                            "st8": "INCREASE EXTREME",
+                            "mt4": "INCREASE EXTREME",
+                            "mt8": "INCREASE EXTREME"
+                        },
+                        {
+                            "title": "Acute",
+                            "nt4": "INCREASE HIGH",
+                            "nt8": "INCREASE HIGH",
+                            "st4": "INCREASE HIGH",
+                            "st8": "INCREASE VERY HIGH",
+                            "mt4": "INCREASE VERY HIGH",
+                            "mt8": "INCREASE VERY HIGH"
+                        }
+                    ]
+                },
+                {
+                    "title": "Solid mass-related",
+                    "rows": [
+                        {
+                            "title": "Chronic",
+                            "nt4": "NULL",
+                            "nt8": "NULL",
+                            "st4": "NULL",
+                            "st8": "NULL",
+                            "mt4": "NULL",
+                            "mt8": "NULL"
+                        },
+                        {
+                            "title": "Acute",
+                            "nt4": "NO VARIATION",
+                            "nt8": "NO VARIATION",
+                            "st4": "NO VARIATION",
+                            "st8": "NO VARIATION",
+                            "mt4": "NO VARIATION",
+                            "mt8": "NO VARIATION"
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
