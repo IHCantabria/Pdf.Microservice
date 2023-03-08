@@ -500,29 +500,56 @@
 
         <div>
 
-            <!-- DYNAMIC TABLE -->
-            <!-- DYNAMIC LIST -->
+            {% for table in s6["s63"] %}
 
-            <!-- DYNAMIC TABLE -->
-            <!-- DYNAMIC LIST -->
+            <h4>{{ table["title"] }}</h4>
+            <table class="dynamic-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th COLSPAN="2">Near-term <br />2025</th>
+                        <th COLSPAN="2">Short-term <br />2030</th>
+                        <th COLSPAN="2">Mid-term <br />2050</th>
+                    </tr>
+                    <tr>
+                        <th>KPI</th>
+                        <th>RISK DRIVER</th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in table["rows"] %}
+                    {% for r in row["rows"] %}
+                    <tr>
+                        <td>{{ row["title"] }}</td>
+                        <td>{{ r["driver"] }}</td>
+                        <td class="{{ r['nt4'] | lower }}">{{ r["nt4"] }}</td>
+                        <td class="{{ r['nt8'] | lower }}">{{ r["nt8"] }}</td>
+                        <td class="{{ r['st4'] | lower }}">{{ r["st4"] }}</td>
+                        <td class="{{ r['st8'] | lower }}">{{ r["st8"] }}</td>
+                        <td class="{{ r['mt4'] | lower }}">{{ r["mt4"] }}</td>
+                        <td class="{{ r['mt8'] | lower }}">{{ r["mt8"] }}</td>
+                    </tr>
+                    {% endfor %}
 
-            <!-- DYNAMIC TABLE -->
-            <!-- DYNAMIC LIST -->
+                    {% endfor %}
+                </tbody>
 
-            <!-- DYNAMIC TABLE -->
-            <!-- DYNAMIC LIST -->
+            </table>
+            Adaptation options:
+            <ul>
+                {% for option in table["adaption_options"] %}
+                <li>{{ option }}</li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
 
-            <!-- DYNAMIC TABLE -->
-            <!-- DYNAMIC LIST -->
-
-            <!-- DYNAMIC TABLE -->
-            <!-- DYNAMIC LIST -->
-
-            <!-- DYNAMIC TABLE -->
-            <!-- DYNAMIC LIST -->
-
-            <!-- DYNAMIC TABLE -->
-            <!-- DYNAMIC LIST -->
         </div>
 
 

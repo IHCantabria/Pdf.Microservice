@@ -304,6 +304,408 @@
                         }
                     ]
                 }
+            ],
+            "s63": [
+                {
+                    "title": "Buildings",
+                    "adaption_options": [
+                        "Improve access to facilities",
+                        "Improve building insulation",
+                        "Insulate buildings and warehouses",
+                        "Roof protection",
+                        "Snow and ice removal equipment",
+                        "Upgrade drainage system",
+                        "Upscale winter maintenance",
+                        "Upscale the drainage system"
+                    ],
+                    "rows": [
+                        {
+                            "title": "OPEX",
+                            "rows": [
+                                {
+                                    "driver": "Increased maintenance due to acute heat and cold temperatures",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "CAPEX",
+                            "rows": [
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to heavy rains",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to TCs",
+                                    "nt4": "MODERATE",
+                                    "nt8": "MODERATE",
+                                    "st4": "MODERATE",
+                                    "st8": "MODERATE",
+                                    "mt4": "MODERATE",
+                                    "mt8": "MODERATE"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "REVENUES",
+                            "rows": [
+                                {
+                                    "driver": "Stop of operations due to heavy rain",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Stop of operations due to snow and ice accumulation",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Drainage system",
+                    "adaption_options": [
+                        "Increase frequency of clearance of the drainage system",
+                        "Increase frequency of maintenance of cuts and fillings, retaining walls and vegetation",
+                        "Substitute drainage system",
+                        "Upscale the drainage system",
+                        "Widening the road"
+                    ],
+                    "rows": [
+                        {
+                            "title": "OPEX",
+                            "rows": [
+                                {
+                                    "driver": "Increased maintenance of the drainage system due to increase in heavy precipitation",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "CAPEX",
+                            "rows": [
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to heavy rains",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Upgrade of the drainage system due to increased precipitation",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "REVENUES",
+                            "rows": [
+                                {
+                                    "driver": "Stop of operations due to heavy rain",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Stop of operations due to snow and ice accumulation",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "ITS/ETCS and toll plazas",
+                    "adaption_options": [
+                        "Substitution of the equipment",
+                        "TCs early warning system",
+                        "Upgrade drainage of toll plazas",
+                        "Upgrading the equipment",
+                        "Waterproof cabinets and devices",
+                        "Wind early warning system"
+                    ],
+                    "rows": [
+                        {
+                            "title": "OPEX",
+                            "rows": [
+                                {
+                                    "driver": "Increased maintenance duw to increase in heavy precipitation",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Increased maintenance due to strong winds and sandstorms",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "CAPEX",
+                            "rows": [
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to heat stress",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to heavy rains",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Reactive CAPEX due to damages associated to TCs",
+                                    "nt4": "MODERATE",
+                                    "nt8": "MODERATE",
+                                    "st4": "MODERATE",
+                                    "st8": "SERIOUS",
+                                    "mt4": "SERIOUS",
+                                    "mt8": "SERIOUS"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "REVENUES",
+                            "rows": [
+                                {
+                                    "driver": "Stop of operations due to heavy rain",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Pavement",
+                    "adaption_options": [
+                        "Construction of protection infraestructure",
+                        "Granular or rock cap / Use of geotextiles in road",
+                        "Increase frequency of clearance of the drainage system",
+                        "Increasing thickness of pavement",
+                        "Road realignment / Raise of the platform",
+                        "Stabilization of sand dunes",
+                        "Substitution of pavement surface layer",
+                        "Tunnel portal flood containment systems",
+                        "Upgrade of pavement mix",
+                        "Upgrade of pavement surface layer",
+                        "Upscale winter maintenance",
+                        "Upscale the drainage system",
+                        "Vegetation shelterbelt",
+                        "Windening the road"
+                    ],
+                    "rows": [
+                        {
+                            "title": "OPEX",
+                            "rows": [
+                                {
+                                    "driver": "Increased maintenance due to changes in precipitation",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Increased maintenance due to sandstorms",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Increased maintenance due to snow and ice accumulation",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Increased maintenance due to snow and ice accumulation",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "MINOR",
+                                    "mt8": "MINOR"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "CAPEX",
+                            "rows": [
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to coastal flooding events",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to heat stress",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to heavy rains",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to sea level rise",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Reactive CAPEX due to damages associeated to wildfire",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Reactive CAPEX due to damages caused by landslides",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "REVENUES",
+                            "rows": [
+                                {
+                                    "driver": "Stop of operations due to heavy rain",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Stop of operations due to sandstorms",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Stop of operations due to snow and ice accumulation",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "driver": "Stop of operations due to TCs",
+                                    "nt4": "MODERATE",
+                                    "nt8": "MODERATE",
+                                    "st4": "MODERATE",
+                                    "st8": "MODERATE",
+                                    "mt4": "MODERATE",
+                                    "mt8": "MODERATE"
+                                },
+                                {
+                                    "driver": "Payload limitation due to high temperature",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "MINOR",
+                                    "mt8": "MINOR"
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     }
