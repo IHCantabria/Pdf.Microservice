@@ -47,4 +47,9 @@ def create_pdf(data: dict):
     pdf_final_name = f"{str(uuid.uuid4())}.pdf"
     pdf_final_path = Path(pdf.parent, pdf_final_name)
     shutil.move(pdf, pdf_final_path)
-    return pdf_final_path
+    return FileResponse(
+        pdf_final_path,
+        media_type="application/x-pdf",
+        filename=pdf_final_name,
+    )
+    # return pdf_final_path
