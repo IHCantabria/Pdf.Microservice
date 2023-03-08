@@ -996,104 +996,129 @@
                     ]
                 }
             ],
-            "s72b": [
+            "s73": [
                 {
-                    "title": "TEMPERATURE RELATED",
-                    "subsection": [
+                    "title": "Temperature",
+                    "rows": [
                         {
-                            "title": "Chronic",
-                            "rows": [
-                                {
-                                    "title": "Heat stress",
-                                    "variable": "The average number of days per year with daily maximum temperature >= 40 ºC",
-                                    "units": "days/year"
-                                },
-                                {
-                                    "title": "Changing temperature (air, freshwater, marine water)",
-                                    "variable": "Mean annual temperature",
-                                    "units": "ºC"
-                                },
-                                {
-                                    "title": "Temperature variability",
-                                    "variable": "Mean annual temperature",
-                                    "units": "ºC"
-                                }
-                            ]
+                            "title": "Heat wave daily probaility of 3 or more days exceeding current 90th percentile daily mean temperature",
+                            "historic": 0.0683,
+                            "nt4": 0.1196,
+                            "nt8": 0.1204,
+                            "st4": 0.1456,
+                            "st8": 0.1564,
+                            "mt4": 0.1868,
+                            "mt8": 0.2114
                         },
                         {
-                            "title": "Acute",
-                            "rows": [
-                                {
-                                    "title": "Cold wave/frost",
-                                    "variable": "The average number of days per year with daily minimum temperature < -31 ºC",
-                                    "units": "days/year"
-                                },
-                                {
-                                    "title": "Heat wave",
-                                    "variable": "The average number of days per year with daily maximum temperature >= 40 ºC",
-                                    "units": "days/year"
-                                },
-                                {
-                                    "title": "Wildfire",
-                                    "variable": "The daily probability of days per year with Canadian Fire Wather Index exceeding 45",
-                                    "units": "%"
-                                }
-                            ]
+                            "title": "Mean annual temperature",
+                            "historic": 17.0578,
+                            "nt4": 17.8583,
+                            "nt8": 17.56,
+                            "st4": 18.0179,
+                            "st8": 18.0904,
+                            "mt4": 18.4339,
+                            "mt8": 18.9405
+                        },
+                        {
+                            "title": "Number of days per year with daily minimum temperature < -31 °C",
+                            "historic": 0,
+                            "nt4": 0,
+                            "nt8": 0,
+                            "st4": 0,
+                            "st8": 0,
+                            "mt4": 0,
+                            "mt8": 0
+                        },
+                        {
+                            "title": "Number of days per year with daily maximum temperature > 40 °C",
+                            "historic": 0,
+                            "nt4": 0,
+                            "nt8": 0,
+                            "st4": 0,
+                            "st8": 0,
+                            "mt4": 0,
+                            "mt8": 0
+                        },
+                        {
+                            "title": "Hottest daily maximum temperature",
+                            "historic": 24.2566,
+                            "nt4": 25.1063,
+                            "nt8": 24.9224,
+                            "st4": 25.3783,
+                            "st8": 25.3943,
+                            "mt4": 25.6055,
+                            "mt8": 26.1013
                         }
                     ]
                 },
                 {
-                    "title": "WATER RELATED",
-                    "subsection": [
+                    "title": "Precipitation",
+                    "rows": [
                         {
-                            "title": "Chronic",
-                            "rows": [
-                                {
-                                    "title": "Sea level rise",
-                                    "variable": "Relative sea level rise",
-                                    "units": "m"
-                                },
-                                {
-                                    "title": "Changing precipitation patterns and types (rain, hail, snow/ice)",
-                                    "variable": "Mean annual rainfall (including frozen precipitation",
-                                    "units": "mm"
-                                },
-                                {
-                                    "title": "Precipitation or hydrological variability",
-                                    "variable": "Mean annual rainfall (including frozen precipitation)",
-                                    "units": "mm"
-                                },
-                                {
-                                    "title": "Water stress",
-                                    "variable": "WRI water stress. Water stress measures total annual water withdrawals (municipal, industrial and agricultural) expressed as a percent of the total annual available flow",
-                                    "units": "%"
-                                }
-                            ]
+                            "title": "Number of days with heavy rain",
+                            "historic": 3.4504,
+                            "nt4": 3.2664,
+                            "nt8": 3.833,
+                            "st4": 3.4001,
+                            "st8": 3.967,
+                            "mt4": 3.7339,
+                            "mt8": 4.0333
                         },
                         {
-                            "title": "Acute",
-                            "rows": [
-                                {
-                                    "title": "Heavy precipitation (<strong>rain</strong>, hail, snow/ice)",
-                                    "variable": "25-year return period of maximum 1-day precipitation",
-                                    "units": "mm"
-                                },
-                                {
-                                    "title": "Heavy precipitation (rain, hail, <strong>snow</strong>/ice)",
-                                    "variable": "Winter months accumulated snow",
-                                    "units": "mm"
-                                },
-                                {
-                                    "title": "Flood (coastal, fluvial, pluvial, ground water)",
-                                    "variable": "The average annual precipitation",
-                                    "units": "mm/year"
-                                },
-                                {
-                                    "title": "Drought",
-                                    "variable": "The average annual precipitation",
-                                    "units": "mm/year"
-                                }
-                            ]
+                            "title": "Mean annual rainfall",
+                            "historic": 756.5825,
+                            "nt4": 735.7684,
+                            "nt8": 752.9709,
+                            "st4": 735.4894,
+                            "st8": 733.5839,
+                            "mt4": 736.1859,
+                            "mt8": 704.744
+                        },
+                        {
+                            "title": "25-year return level precipitation",
+                            "historic": "-",
+                            "nt4": "-",
+                            "nt8": "-",
+                            "st4": "-",
+                            "st8": "-",
+                            "mt4": "-",
+                            "mt8": "-"
+                        }
+                    ]
+                },
+                {
+                    "title": "Wind",
+                    "rows": [
+                        {
+                            "title": "Number of extreme wind days",
+                            "historic": 0.0666,
+                            "nt4": 0.0667,
+                            "nt8": 0.0817,
+                            "st4": 0.0489,
+                            "st8": 0.0656,
+                            "mt4": 0.0333,
+                            "mt8": 0.0333
+                        },
+                        {
+                            "title": "Number of high wind days",
+                            "historic": 4.5497,
+                            "nt4": 3.4332,
+                            "nt8": 4.2957,
+                            "st4": 3.0997,
+                            "st8": 4.2,
+                            "mt4": 2.593,
+                            "mt8": 3.5484
+                        },
+                        {
+                            "title": "Annual mean wind speed",
+                            "historic": 6.6394,
+                            "nt4": 6.4752,
+                            "nt8": 6.636,
+                            "st4": 6.3903,
+                            "st8": 6.5761,
+                            "mt4": 6.324,
+                            "mt8": 6.4115
                         }
                     ]
                 }

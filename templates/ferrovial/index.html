@@ -699,14 +699,6 @@
             {% endif %}
             {% endfor %}
 
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
             <h3>Hazard – climate variables relationship</h3>
             <!-- LEGEND -->
             <table>
@@ -872,6 +864,50 @@
 
             <h3 id="hazard-analysis-data">7.3 CLIMATE DATA</h3>
 
+            {% for table in s7["s73"] %}
+            <h4> {{ table["title"] }}</h4>
+
+            <table class="dynamic-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Historic</th>
+                        <th COLSPAN="2">Near-term <br />2025</th>
+                        <th COLSPAN="2">Short-term <br />2030</th>
+                        <th COLSPAN="2">Mid-term <br />2050</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in table["rows"] %}
+
+                    <tr>
+                        <td>{{ row["title"] }}</td>
+                        <td>{{ row["historic"] }}</td>
+                        <td>{{ row["nt4"] }}</td>
+                        <td>{{ row["nt8"] }}</td>
+                        <td>{{ row["st4"] }}</td>
+                        <td>{{ row["st8"] }}</td>
+                        <td>{{ row["mt4"] }}</td>
+                        <td>{{ row["mt8"] }}</td>
+                    </tr>
+
+
+                    {% endfor %}
+                </tbody>
+
+
+            </table>
+            {% endfor %}
             <!-- DYNAMIC TABLE -->
 
             <!-- DYNAMIC TABLE -->
