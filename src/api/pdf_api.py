@@ -6,6 +6,7 @@ from fastapi import APIRouter, Header
 from fastapi.responses import FileResponse
 
 from src.generator import Generator
+from src import core
 
 router = APIRouter()
 
@@ -53,3 +54,10 @@ def create_pdf(data: dict):
         filename=pdf_final_name,
     )
     # return pdf_final_path
+
+
+@router.get("/templates")
+def get_templates():
+    """Returns a list of available templates"""
+    templates = core.get_templates()
+    return {"templates": templates}
