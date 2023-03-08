@@ -2,11 +2,11 @@ import shutil
 import uuid
 from pathlib import Path
 
-from fastapi import APIRouter, Header
-from fastapi.responses import FileResponse
+from fastapi import APIRouter, Header, status
+from fastapi.responses import FileResponse, JSONResponse
 
-from src.generator import Generator
 from src import core
+from src.generator import Generator
 
 router = APIRouter()
 
@@ -61,3 +61,21 @@ def get_templates():
     """Returns a list of available templates"""
     templates = core.get_templates()
     return {"templates": templates}
+
+
+@router.get("/example/{template_name}")
+def get_example(template_name: str):
+    """Returns a JSON file with the given title and content."""
+
+    example_path = core.get_example(template_name)
+    if example_path.exists():
+        return FileResponse(
+            example_path,
+            media_type="application/json",
+            filename=f"example-{template_name}.json",
+        )
+    else:
+        return JSONResponse(
+            status_code=status.HTTP_404_NOT_FOUND,
+            content="Example not found for this template",
+        )
