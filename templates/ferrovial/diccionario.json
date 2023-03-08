@@ -995,6 +995,108 @@
                         }
                     ]
                 }
+            ],
+            "s72b": [
+                {
+                    "title": "TEMPERATURE RELATED",
+                    "subsection": [
+                        {
+                            "title": "Chronic",
+                            "rows": [
+                                {
+                                    "title": "Heat stress",
+                                    "variable": "The average number of days per year with daily maximum temperature >= 40 ºC",
+                                    "units": "days/year"
+                                },
+                                {
+                                    "title": "Changing temperature (air, freshwater, marine water)",
+                                    "variable": "Mean annual temperature",
+                                    "units": "ºC"
+                                },
+                                {
+                                    "title": "Temperature variability",
+                                    "variable": "Mean annual temperature",
+                                    "units": "ºC"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Acute",
+                            "rows": [
+                                {
+                                    "title": "Cold wave/frost",
+                                    "variable": "The average number of days per year with daily minimum temperature < -31 ºC",
+                                    "units": "days/year"
+                                },
+                                {
+                                    "title": "Heat wave",
+                                    "variable": "The average number of days per year with daily maximum temperature >= 40 ºC",
+                                    "units": "days/year"
+                                },
+                                {
+                                    "title": "Wildfire",
+                                    "variable": "The daily probability of days per year with Canadian Fire Wather Index exceeding 45",
+                                    "units": "%"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "WATER RELATED",
+                    "subsection": [
+                        {
+                            "title": "Chronic",
+                            "rows": [
+                                {
+                                    "title": "Sea level rise",
+                                    "variable": "Relative sea level rise",
+                                    "units": "m"
+                                },
+                                {
+                                    "title": "Changing precipitation patterns and types (rain, hail, snow/ice)",
+                                    "variable": "Mean annual rainfall (including frozen precipitation",
+                                    "units": "mm"
+                                },
+                                {
+                                    "title": "Precipitation or hydrological variability",
+                                    "variable": "Mean annual rainfall (including frozen precipitation)",
+                                    "units": "mm"
+                                },
+                                {
+                                    "title": "Water stress",
+                                    "variable": "WRI water stress. Water stress measures total annual water withdrawals (municipal, industrial and agricultural) expressed as a percent of the total annual available flow",
+                                    "units": "%"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Acute",
+                            "rows": [
+                                {
+                                    "title": "Heavy precipitation (<strong>rain</strong>, hail, snow/ice)",
+                                    "variable": "25-year return period of maximum 1-day precipitation",
+                                    "units": "mm"
+                                },
+                                {
+                                    "title": "Heavy precipitation (rain, hail, <strong>snow</strong>/ice)",
+                                    "variable": "Winter months accumulated snow",
+                                    "units": "mm"
+                                },
+                                {
+                                    "title": "Flood (coastal, fluvial, pluvial, ground water)",
+                                    "variable": "The average annual precipitation",
+                                    "units": "mm/year"
+                                },
+                                {
+                                    "title": "Drought",
+                                    "variable": "The average annual precipitation",
+                                    "units": "mm/year"
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     }
