@@ -802,6 +802,199 @@
                         }
                     ]
                 }
+            ],
+            "s72": [
+                {
+                    "title": "Temperature-related",
+                    "rows": [
+                        {
+                            "title": "Chronic",
+                            "rows": [
+                                {
+                                    "title": "Heat stress",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "title": "Changing temperature (air, freshwater, marine water)",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "INCREASE LOW",
+                                    "mt8": "INCREASE LOW"
+                                },
+                                {
+                                    "title": "Temperature variability",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "INCREASE LOW",
+                                    "mt8": "INCREASE LOW"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Acute",
+                            "rows": [
+                                {
+                                    "title": "Cold wave/frost",
+                                    "nt4": "INCREASE EXTREME",
+                                    "nt8": "INCREASE EXTREME",
+                                    "st4": "INCREASE EXTREME",
+                                    "st8": "INCREASE EXTREME",
+                                    "mt4": "INCREASE EXTREME",
+                                    "mt8": "INCREASE EXTREME"
+                                },
+                                {
+                                    "title": "Heat wave",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "title": "Wildfire",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Water-related",
+                    "affected_assets": "ITS/ETCS and toll plazas, Pavement, Signaling, equipment and safety, Slopes and embankments, Structures.",
+                    "rows": [
+                        {
+                            "title": "Chronic",
+                            "rows": [
+                                {
+                                    "title": "Sea level rise",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "title": "Changing precipitation patterns and types (rain, hail, snow/ice)",
+                                    "nt4": "REDUCTION EXTREME",
+                                    "nt8": "REDUCTION EXTREME",
+                                    "st4": "REDUCTION EXTREME",
+                                    "st8": "REDUCTION EXTREME",
+                                    "mt4": "REDUCTION EXTREME",
+                                    "mt8": "REDUCTION EXTREME"
+                                },
+                                {
+                                    "title": "Precipitation or hydrological variability",
+                                    "nt4": "REDUCTION EXTREME",
+                                    "nt8": "REDUCTION EXTREME",
+                                    "st4": "REDUCTION EXTREME",
+                                    "st8": "REDUCTION EXTREME",
+                                    "mt4": "REDUCTION EXTREME",
+                                    "mt8": "REDUCTION EXTREME"
+                                },
+                                {
+                                    "title": "Water stress",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Acute",
+                            "rows": [
+                                {
+                                    "title": "Heavy precipitation (rain, hail, snow/ice)",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "title": "Flood (coastal, fluvial, pluvial, ground water)",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "title": "Drought",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Wind-related",
+                    "affected_assets": "Pavement, Signaling, equipment and safety, Slopes and embankments.",
+                    "rows": [
+                        {
+                            "title": "Chronic",
+                            "rows": [
+                                {
+                                    "title": "Changing wind patterns",
+                                    "nt4": "INCREASE EXTREME",
+                                    "nt8": "INCREASE EXTREME",
+                                    "st4": "INCREASE EXTREME",
+                                    "st8": "INCREASE EXTREME",
+                                    "mt4": "INCREASE EXTREME",
+                                    "mt8": "INCREASE EXTREME"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Acute",
+                            "rows": [
+                                {
+                                    "title": "Storm (including blizzards, dust and sandstorms",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                },
+                                {
+                                    "title": "Cyclone, hurricane, typhoon",
+                                    "nt4": "NO VARIATION",
+                                    "nt8": "NO VARIATION",
+                                    "st4": "NO VARIATION",
+                                    "st8": "NO VARIATION",
+                                    "mt4": "NO VARIATION",
+                                    "mt8": "NO VARIATION"
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     }

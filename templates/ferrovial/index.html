@@ -651,6 +651,53 @@
         {% endfor %}
 
         <h3 id="hazard-analysis-analysis">7.2 HAZARD ANALYSIS</h>
+            {% for table in s7["s72"] %}
+            <h4> {{ table["title"] }}</h4>
+            <table class="dynamic-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th COLSPAN="2">Near-term <br />2025</th>
+                        <th COLSPAN="2">Short-term <br />2030</th>
+                        <th COLSPAN="2">Mid-term <br />2050</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                        <th>RCP4.5</th>
+                        <th>RCP8.5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for rows in table["rows"] %}
+                    <tr>
+                        <td colspan="7" class="table-subheader">{{ rows["title"] }}</td>
+                    </tr>
+                    {% for r in rows["rows"] %}
+                    <tr>
+                        <td>{{ r["title"] }}</td>
+                        <td><span class="dot {{ r['nt4'] | lower | replace(' ', '-')  }}"></span></td>
+                        <td><span class="dot {{ r['nt8'] | lower | replace(' ', '-')  }}"></span></td>
+                        <td><span class="dot {{ r['st4'] | lower | replace(' ', '-')  }}"></span></td>
+                        <td><span class="dot {{ r['st8'] | lower | replace(' ', '-')  }}"></span></td>
+                        <td><span class="dot {{ r['mt4'] | lower | replace(' ', '-')  }}"></span></td>
+                        <td><span class="dot {{ r['mt8'] | lower | replace(' ', '-')  }}"></span></td>
+                    </tr>
+
+                    {% endfor %}
+                    {% endfor %}
+                </tbody>
+
+
+            </table>
+            {% if "affected_assets" in table %}
+            <strong>Affected assets:</strong>{{ table["affected_assets"] }}</td>
+
+            {% endif %}
+            {% endfor %}
 
             <!-- DYNAMIC TABLE -->
 
