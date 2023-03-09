@@ -1,7 +1,7 @@
 {
     "template_name": "ferrovial",
-    "CRT_version": "1.2.1",
     "content": {
+        "CRT_version": "1.2.1",
         "s1": {
             "project_name": "Azores_1",
             "sector": "Rodas",
