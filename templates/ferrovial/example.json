@@ -784,12 +784,12 @@
                     "rows": [
                         {
                             "title": "Chronic",
-                            "nt4": "NULL",
-                            "nt8": "NULL",
-                            "st4": "NULL",
-                            "st8": "NULL",
-                            "mt4": "NULL",
-                            "mt8": "NULL"
+                            "nt4": "NULL-VALUE",
+                            "nt8": "NULL-VALUE",
+                            "st4": "NULL-VALUE",
+                            "st8": "NULL-VALUE",
+                            "mt4": "NULL-VALUE",
+                            "mt8": "NULL-VALUE"
                         },
                         {
                             "title": "Acute",
