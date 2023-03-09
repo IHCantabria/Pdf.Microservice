@@ -29,8 +29,8 @@ class PdfGenerator:
         header_html=None,
         footer_html=None,
         base_url=None,
-        side_margin=2,
-        extra_vertical_margin=30,
+        side_margin=0,
+        extra_vertical_margin=0,
     ):
         """
         Parameters
