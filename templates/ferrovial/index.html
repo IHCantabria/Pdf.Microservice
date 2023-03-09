@@ -908,25 +908,7 @@
 
             </table>
             {% endfor %}
-            <!-- DYNAMIC TABLE -->
 
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
-
-            <!-- DYNAMIC TABLE -->
 
     </div>
 
@@ -944,31 +926,99 @@
         </div>
 
         <h3>INFRASTRUCTURE CONSEQUENCES ESTIMATION</h3>
-        <!-- DYNAMIC TABLE -->
 
+        {% for row in s8["infraestructure"] %}
+        <table class="dynamic-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Consequences</th>
+                    <th COLSPAN="2">Near-term <br />2025</th>
+                    <th COLSPAN="2">Short-term <br />2030</th>
+                    <th COLSPAN="2">Mid-term <br />2050</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                <tr>
+                    <td>{{ row["title"] }}</td>
+                    <td>{{ row["consequences"] }}</td>
+                    <td>{{ row["nt4"] }}</td>
+                    <td>{{ row["nt8"] }}</td>
+                    <td>{{ row["st4"] }}</td>
+                    <td>{{ row["st8"] }}</td>
+                    <td>{{ row["mt4"] }}</td>
+                    <td>{{ row["mt8"] }}</td>
+                </tr>
+
+
+
+            </tbody>
+
+
+        </table>
+        {% endfor %}
         <h3>ASSETS CONSEQUENCES ESTIMATION</h3>
 
-        <!-- DYNAMIC TABLE -->
+        {% for table in s8["assets"] %}
+        <h4>{{ table["title"]}} </h4>
+        <table class="dynamic-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Consequences</th>
+                    <th COLSPAN="2">Near-term <br />2025</th>
+                    <th COLSPAN="2">Short-term <br />2030</th>
+                    <th COLSPAN="2">Mid-term <br />2050</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                    <th>RCP4.5</th>
+                    <th>RCP8.5</th>
+                </tr>
+            </thead>
+            <tbody>
 
-        <!-- DYNAMIC TABLE -->
+                {% for row in table["rows"] %}
+                <tr>
+                    <td>{{ row["title"] }}</td>
+                    <td>{{ row["consequences"] }}</td>
+                    <td>{{ row["nt4"] }}</td>
+                    <td>{{ row["nt8"] }}</td>
+                    <td>{{ row["st4"] }}</td>
+                    <td>{{ row["st8"] }}</td>
+                    <td>{{ row["mt4"] }}</td>
+                    <td>{{ row["mt8"] }}</td>
+                </tr>
+                {% endfor %}
 
-        <!-- DYNAMIC TABLE -->
 
-        <!-- DYNAMIC TABLE -->
+            </tbody>
 
-        <!-- DYNAMIC TABLE -->
 
-        <!-- DYNAMIC TABLE -->
-
-        <!-- DYNAMIC TABLE -->
-
-        <!-- DYNAMIC TABLE -->
-
+        </table>
+        {% endfor %}
     </div>
 
     <h2 id="comments">9 Changes and comments to the reference value</h2>
     <div class="section">
-
+        {{ s9}}
     </div>
 
 </body>

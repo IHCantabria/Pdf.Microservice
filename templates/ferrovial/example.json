@@ -1123,6 +1123,148 @@
                     ]
                 }
             ]
-        }
+        },
+        "s8": {
+            "infraestructure": [
+                {
+                    "title": "Damages (MUSD)",
+                    "consequences": "CAPEX",
+                    "nt4": 12.722,
+                    "nt8": 12.722,
+                    "st4": 12.722,
+                    "st8": 12.722,
+                    "mt4": 26.505,
+                    "mt8": 26.505
+                },
+                {
+                    "title": "Maintenance (MUSD/year)",
+                    "consequences": "OPEX",
+                    "nt4": 0.156,
+                    "nt8": 0.156,
+                    "st4": 0.234,
+                    "st8": 0.234,
+                    "mt4": 0.234,
+                    "mt8": 0.234
+                },
+                {
+                    "title": "Operations (MUSD/year)",
+                    "consequences": "REVENUES",
+                    "nt4": 1.778,
+                    "nt8": 1.778,
+                    "st4": 1.778,
+                    "st8": 1.778,
+                    "mt4": 1.778,
+                    "mt8": 1.778
+                }
+            ],
+            "assets": [
+                {
+                    "title": "Buildings",
+                    "rows": [
+                        {
+                            "title": "Damages (MUSD)",
+                            "consequences": "CAPEX",
+                            "nt4": 0,
+                            "nt8": 0,
+                            "st4": 0,
+                            "st8": 0,
+                            "mt4": 0,
+                            "mt8": 0
+                        },
+                        {
+                            "title": "Maintenance (MUSD/year)",
+                            "consequences": "OPEX",
+                            "nt4": 0,
+                            "nt8": 0,
+                            "st4": 0,
+                            "st8": 0,
+                            "mt4": 0,
+                            "mt8": 0
+                        },
+                        {
+                            "title": "Operations (MUSD/year)",
+                            "consequences": "REVENUES",
+                            "nt4": 0,
+                            "nt8": 0,
+                            "st4": 0,
+                            "st8": 0,
+                            "mt4": 0,
+                            "mt8": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "Drainage system",
+                    "rows": [
+                        {
+                            "title": "Damages (MUSD)",
+                            "consequences": "CAPEX",
+                            "nt4": 0.885,
+                            "nt8": 0.885,
+                            "st4": 0.885,
+                            "st8": 0.885,
+                            "mt4": 0.885,
+                            "mt8": 0.885
+                        },
+                        {
+                            "title": "Maintenance (MUSD/year)",
+                            "consequences": "OPEX",
+                            "nt4": 0,
+                            "nt8": 0,
+                            "st4": 0,
+                            "st8": 0,
+                            "mt4": 0,
+                            "mt8": 0
+                        },
+                        {
+                            "title": "Operations (MUSD/year)",
+                            "consequences": "REVENUES",
+                            "nt4": 0,
+                            "nt8": 0,
+                            "st4": 0,
+                            "st8": 0,
+                            "mt4": 0,
+                            "mt8": 0
+                        }
+                    ]
+                },
+                {
+                    "title": "ITS/ETCS",
+                    "rows": [
+                        {
+                            "title": "Damages (MUSD)",
+                            "consequences": "CAPEX",
+                            "nt4": 0.885,
+                            "nt8": 0.885,
+                            "st4": 0.885,
+                            "st8": 0.885,
+                            "mt4": 0.885,
+                            "mt8": 0.885
+                        },
+                        {
+                            "title": "Maintenance (MUSD/year)",
+                            "consequences": "OPEX",
+                            "nt4": 0,
+                            "nt8": 0,
+                            "st4": 0,
+                            "st8": 0,
+                            "mt4": 0,
+                            "mt8": 0
+                        },
+                        {
+                            "title": "Operations (MUSD/year)",
+                            "consequences": "REVENUES",
+                            "nt4": 0,
+                            "nt8": 0,
+                            "st4": 0,
+                            "st8": 0,
+                            "mt4": 0,
+                            "mt8": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        "s9": "<p>Párrafo 1 contando cosas</p><p>Otro párrafo contando más cosas</p>"
     }
 }
