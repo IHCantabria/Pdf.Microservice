@@ -18,6 +18,7 @@ dependencies = [
     "cartopy",
     "coverage[toml]",
     "fastapi",
+    "httpx",
     "jinja2",
     "pytest >=7",
     "python-dotenv",
