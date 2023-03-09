@@ -66,7 +66,12 @@ def get_templates():
 @router.get("/example/{template_name}")
 def get_example(template_name: str):
     """Returns a JSON file with the given title and content."""
-
+    templates = core.get_templates()
+    if template_name not in templates:
+        return JSONResponse(
+            status_code=status.HTTP_404_NOT_FOUND,
+            content="Template not found",
+        )
     example_path = core.get_example(template_name)
     if example_path.exists():
         return FileResponse(
@@ -76,6 +81,6 @@ def get_example(template_name: str):
         )
     else:
         return JSONResponse(
-            status_code=status.HTTP_404_NOT_FOUND,
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             content="Example not found for this template",
         )
