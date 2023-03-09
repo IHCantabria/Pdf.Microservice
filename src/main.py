@@ -4,7 +4,9 @@ from fastapi.openapi.utils import get_openapi
 from src.api.pdf_api import router as router_pdf
 
 from . import __version__
+
 app = FastAPI()
+
 
 def custom_openapi():
     if app.openapi_schema:
@@ -21,5 +23,6 @@ def custom_openapi():
     app.openapi_schema = openapi_schema
     return app.openapi_schema
 
+
 app.openapi = custom_openapi
-app.include_router(router_pdf, prefix="/pdf", tags=["pdf printer"])
+app.include_router(router_pdf, prefix="/pdf", tags=["pdf"])
