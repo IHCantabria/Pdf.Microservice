@@ -7,19 +7,6 @@
   }
 }
 
-.toc-page {
-  position: absolute;
-  padding-top: 20px;
-
-}
-
-.toc-page a::after {
-  content: leader('.') target-counter(attr(href), page);
-}
-
-
-
-
 
 /* GENERAL */
 :root {
@@ -234,6 +221,13 @@ figcaption {
 
 
 /* INDEX */
+.toc-page {
+  width: 85%;
+}
+
+.toc-page a::after {
+  content: leader('.') target-counter(attr(href), page);
+}
 .ordered-list ol {
   counter-reset: item;
 }
